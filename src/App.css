@@ -4,12 +4,10 @@
   --primary-color: #4c31ff;
 }
 
-
-
 .App {
   text-align: center;
   background-color: #efefef; /* Background color */
-  min-height: 100vh; /* Minimum height to cover the viewport height */
+ 
   margin: 0; /* Ensure no extra margin affects layout */
   display: flex; /* Flexbox for layout alignment (if needed) */
   flex-direction: column; /* Arrange children in a column */

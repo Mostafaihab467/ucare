@@ -5,6 +5,7 @@ import Header from './Components/Header/Hader';
 import 'semantic-ui-css/semantic.min.css'
 import Dashboard from './Screens/DashBoard/Dashboard';
 import SideBar from './Components/Sidebar/SideBar';
+import NewPatientScreen from './Screens/NewPatient/NewPatientScreen';
 
 
 
@@ -20,8 +21,10 @@ export default function MainApp() {
 
         <Routes>
           <Route path='/Login' index element={<Login/>} />
-          <Route path='/Login' index element={<Dashboard/>} />
+          <Route path='/Dashboard' index element={<Dashboard/>} />
+          <Route path='/NewPatient' index element={<NewPatientScreen/>} />
 
+          
         </Routes>
       </BrowserRouter>
     </div>

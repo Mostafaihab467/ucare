@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { Button, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { FaBars, FaHome, FaUser, FaCog, FaSignOutAlt } from 'react-icons/fa';
 import { MdDashboard,MdPersonSearch ,MdOutlineSick  } from "react-icons/md";
-import {IoIosStats,IoMdTimer } from 'react-icons/io'
+import {IoIosStats,IoMdTimer ,IoMdAdd } from 'react-icons/io'
 import './SideBar.scss'; // Custom styles for the sidebar
+import { useNavigate } from 'react-router-dom';
 
 export default function SideBar() {
 
   const iconSize = 34;
-
+  const nav = useNavigate()
   const [show, setShow] = useState(false);
 
   // Toggle sidebar visibility
@@ -43,6 +44,9 @@ export default function SideBar() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column SidBarNav">
+          <Nav.Link href="./NewPatient" className="nav-item">
+              <IoMdAdd          size={iconSize}  className="me-2" /> New Patient
+            </Nav.Link>
             <Nav.Link href="#" className="nav-item">
               <MdDashboard  size={iconSize}  className="me-2" /> Dashboard
             </Nav.Link>

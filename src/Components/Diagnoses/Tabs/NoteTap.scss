@@ -1,0 +1,43 @@
+.NoteTapItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.noteWrapper{
+    display: block;
+    align-items: center;
+   
+}
+
+.note-content {
+ // Space between content and buttons
+ color: rgb(151, 151, 151);
+ margin: 0px;
+}
+
+
+.button{
+    display: flex !important;
+    justify-content: center !important; 
+    align-items: center;
+}
+
+.note-buttons {
+  display: flex;
+  gap: 10px; // Space between buttons
+}
+
+.noteHeader{
+    
+    display: flex;
+    align-items: baseline;
+
+.icon{
+    color: var(--primary-color);
+}
+    .header{
+        margin-left: 20px;
+    }
+}
