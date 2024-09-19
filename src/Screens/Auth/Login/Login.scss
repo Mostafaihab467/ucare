@@ -1,0 +1,19 @@
+/* Login.scss */
+
+.loginContainerCard {
+    width: 700px  !important;
+    padding: 20px  !important; // Add padding to the card className='loginContainerCard'>
+  }
+  
+  .loginContainerCard .ui.card.content {
+    padding: 2rem; /* Adjust padding within the card content */
+  }
+  
+  .ui.form .field {
+    margin-bottom: 1.5rem; /* Add space between form fields */
+  }
+   
+  .loginbt{
+    background-color: var(--primary-color) !important;
+    color: white !important;
+  }

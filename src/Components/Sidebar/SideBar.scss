@@ -1,0 +1,47 @@
+.sidebar {
+    width: 250px !important;
+    color: white;
+  
+    .offcanvas-header,
+    .offcanvas-body {
+      color: white;
+
+
+      .SideBarTitle{
+        color: var(--primary-color);
+      }
+    }
+  
+    .SidBarNav{
+      margin-top: 100px;
+    }
+    .nav-item { 
+      color: var(--primary-color);
+      padding: 15px 20px;
+      font-size: 18px;
+      margin-bottom: 15px;  /* Add spacing between nav items */
+      &:hover {
+        background-color: #e7e7e7;
+       
+        border-radius: 5px;
+      }
+      svg {
+        font-size: 24px;
+      }
+    }
+  
+    .offcanvas-header {
+      border-bottom: 1px solid #6c757d;
+    }
+  }
+  
+  .sidebar-toggle {
+    background-color: #343a40;
+    border: none;
+    font-size: 24px;
+  }
+  
+  .spaced-item {
+    margin-bottom: 20px; /* Add extra space between items */
+  }
+  
